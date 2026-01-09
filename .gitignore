@@ -1,0 +1,75 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Environment files (IMPORTANT: Never commit these!)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env*.local
+.env.backup
+
+# Build folders
+build/
+dist/
+.vite/
+.cache/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+.jest/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+.temp/
+
+# Optional: Uncomment if you don't want to commit package-lock files
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# MongoDB
+*.mongodb
+
+# Misc
+*.pem
+*.key
+*.cert

@@ -1,0 +1,412 @@
+:root {
+  --primary-blue: #007bff;
+  --primary-green: #28a745;
+  --dark-bg: #1a1d29;
+  --dark-card: #252836;
+  --dark-text: #e0e0e0;
+}
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+body.dark-mode .navbar,
+body.dark-mode .card {
+  background-color: var(--dark-card) !important;
+  color: var(--dark-text);
+}
+
+body.dark-mode .card {
+  border-color: #3a3f51 !important;
+}
+
+body.dark-mode .table {
+  color: var(--dark-text);
+}
+
+body.dark-mode .table-hover tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+  background-color: #2d3142 !important;
+  color: #e0e0e0 !important;
+  border-color: #3a3f51 !important;
+}
+
+body.dark-mode .form-control::placeholder,
+body.dark-mode .form-select::placeholder {
+  color: #a0a0a0 !important;
+  opacity: 1 !important;
+}
+
+body.dark-mode .form-control::-webkit-input-placeholder {
+  color: #a0a0a0 !important;
+  opacity: 1 !important;
+}
+
+body.dark-mode .form-control::-moz-placeholder {
+  color: #a0a0a0 !important;
+  opacity: 1 !important;
+}
+
+body.dark-mode .form-control:-ms-input-placeholder {
+  color: #a0a0a0 !important;
+  opacity: 1 !important;
+}
+
+body.dark-mode .form-control:-moz-placeholder {
+  color: #a0a0a0 !important;
+  opacity: 1 !important;
+}
+
+body.dark-mode .form-control:focus,
+body.dark-mode .form-select:focus {
+  background-color: #2d3142 !important;
+  color: #e0e0e0 !important;
+  border-color: var(--primary-blue) !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+}
+
+body.dark-mode .form-control:focus::placeholder {
+  color: #a0a0a0 !important;
+}
+
+body.dark-mode .form-label {
+  color: var(--dark-text) !important;
+}
+
+body.dark-mode .modal-content {
+  background-color: var(--dark-card);
+  color: var(--dark-text);
+}
+
+body.dark-mode .modal-header {
+  border-bottom-color: #3a3f51;
+}
+
+body.dark-mode .bg-light {
+  background-color: var(--dark-card) !important;
+  color: var(--dark-text);
+}
+
+body.dark-mode .text-muted {
+  color: #a0a0a0 !important;
+}
+
+body.dark-mode .feature-card {
+  background-color: var(--dark-card);
+  color: var(--dark-text);
+  border-color: #3a3f51 !important;
+}
+
+body.dark-mode .feature-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3) !important;
+}
+
+body.dark-mode h1:not(.text-primary):not(.text-success):not(.text-info),
+body.dark-mode h2:not(.text-primary):not(.text-success):not(.text-info),
+body.dark-mode h3:not(.text-primary):not(.text-success):not(.text-info),
+body.dark-mode h4:not(.text-primary):not(.text-success):not(.text-info),
+body.dark-mode h5:not(.text-primary):not(.text-success):not(.text-info),
+body.dark-mode h6:not(.text-primary):not(.text-success):not(.text-info) {
+  color: var(--dark-text);
+}
+
+body.dark-mode .border {
+  border-color: #3a3f51 !important;
+}
+
+body.dark-mode a {
+  color: #ffffff;
+}
+
+body.dark-mode a:hover {
+  color: #ffffff;
+}
+
+body.dark-mode .lead {
+  color: var(--dark-text);
+}
+
+/* Hero Button Styles */
+.hero-btn-primary:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.5) !important;
+  background: linear-gradient(135deg, #7c8ef0 0%, #8a5bb8 100%) !important;
+}
+
+.hero-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.25) !important;
+  border-color: rgba(255, 255, 255, 0.8) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2) !important;
+}
+
+/* CTA Section Styles */
+body.dark-mode .cta-section {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%) !important;
+  border-color: rgba(102, 126, 234, 0.3) !important;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4) !important;
+}
+
+/* Contact Page Styles */
+.contact-card {
+  border: 1px solid rgba(102, 126, 234, 0.1) !important;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+body.dark-mode .contact-card {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%) !important;
+  border-color: rgba(102, 126, 234, 0.2) !important;
+}
+
+.contact-submit-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4) !important;
+}
+
+.contact-info-item {
+  padding: 1rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.contact-info-item:hover {
+  background-color: rgba(102, 126, 234, 0.05);
+}
+
+body.dark-mode .contact-info-item:hover {
+  background-color: rgba(102, 126, 234, 0.1) !important;
+}
+
+/* Feature Card Enhancements */
+.feature-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+body.dark-mode .feature-card {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%) !important;
+}
+
+/* Image hover effect */
+img[alt="Financial Planning"]:hover {
+  transform: scale(1.05);
+}
+
+/* Auth (Signin) page subtle entrance animation */
+.auth-container {
+  animation: auth-fade-in 0.6s ease-out;
+}
+
+@keyframes auth-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Floating glow accents on the left side of Signin page */
+.auth-left::before,
+.auth-left::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.35), transparent 60%);
+  filter: blur(4px);
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.auth-left::before {
+  width: 260px;
+  height: 260px;
+  top: 10%;
+  left: 5%;
+}
+
+.auth-left::after {
+  width: 200px;
+  height: 200px;
+  bottom: 8%;
+  right: 12%;
+}
+
+body.dark-mode .auth-left::before,
+body.dark-mode .auth-left::after {
+  background: radial-gradient(circle at 30% 30%, rgba(192, 132, 252, 0.45), transparent 60%);
+}
+
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+}
+
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-sm {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08) !important;
+}
+
+.text-primary {
+  color: var(--primary-blue) !important;
+}
+
+.text-success {
+  color: var(--primary-green) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-blue) !important;
+}
+
+.bg-success {
+  background-color: var(--primary-green) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary-blue);
+  border-color: var(--primary-blue);
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-success {
+  background-color: var(--primary-green);
+  border-color: var(--primary-green);
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #218838;
+}
+
+.border-primary {
+  border-color: var(--primary-blue) !important;
+}
+
+.border-success {
+  border-color: var(--primary-green) !important;
+}
+
+/* Auth page layout transitions */
+.auth-left,
+.auth-right {
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s ease-in-out;
+  will-change: transform, opacity;
+}
+
+/* Login mode: Blue panel on left, Form on right */
+.auth-container.login-mode .auth-left {
+  order: 1;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.auth-container.login-mode .auth-right {
+  order: 2;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Signup mode: Form on left, Blue panel on right */
+.auth-container.signup-mode .auth-left {
+  order: 2;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.auth-container.signup-mode .auth-right {
+  order: 1;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Form fade in/out animations */
+.auth-form {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.auth-form.auth-form-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  animation: fadeInForm 0.5s ease-in-out;
+}
+
+@keyframes fadeInForm {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 50vh !important;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem !important;
+  }
+}
