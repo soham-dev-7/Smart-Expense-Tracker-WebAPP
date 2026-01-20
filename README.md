@@ -380,7 +380,7 @@ Smart Expense Tracker/
 ### Backend (.env)
 ```env
 PORT=5000
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/database_name
+MONGODB_URI=your_connection_string_here
 JWT_SECRET=your_super_secret_jwt_key_here
 NODE_ENV=development
 ```
